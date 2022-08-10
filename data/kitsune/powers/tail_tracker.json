@@ -1,0 +1,48 @@
+{
+    "type": "origins:multiple",
+    "tails": {
+        "type": "origins:resource",
+        "hud_render": {
+            "should_render": false
+        },
+        "max": 9,
+        "min": 0,
+        "start_value": 1
+    },
+    "skill_roll_one": {
+        "type": "origins:resource",
+        "hud_render": {
+            "should_render": false
+        },
+        "max": 10,
+        "min": 0
+    },
+    "skill_roll_two": {
+        "type": "origins:resource",
+        "hud_render": {
+            "should_render": false
+        },
+        "max": 10,
+        "min": 0
+    },
+    "skill_roll_three": {
+        "type": "origins:resource",
+        "hud_render": {
+            "should_render": false
+        },
+        "max": 10,
+        "min": 0
+    },
+    "first_tail": {
+        "type": "origins:action_on_callback",
+        "entity_action_gained": {
+            "type": "origins:execute_command",
+            "command": "function kitsune:tail_triggers/tail_one"
+        },
+        "entity_action_lost": {
+            "type": "origins:execute_command",
+            "command": "function kitsune:remove_skills"
+        },
+        "loading_priority": 1
+    }
+}

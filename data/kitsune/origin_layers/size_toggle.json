@@ -1,0 +1,19 @@
+{
+    "auto_choose": true,
+    "gui_title": {
+        "choose_origin": "Change size with tails",
+        "view_origin": "Change size with tails"
+    },
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "kitsune:kitsune"
+            },
+            "origins": [
+                "kitsune:size_toggle/on",
+                "kitsune:size_toggle/off"
+            ]
+        }
+    ]
+}

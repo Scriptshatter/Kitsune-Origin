@@ -1,6 +1,8 @@
 {
     "powers": [
-        "kitsune:tail_tracker"
+        "kitsune:tail_tracker",
+        "kitsune:exp",
+        "kitsune:leveling"
     ],
     "icon": "minecraft:blaze_powder",
     "order": 3,

@@ -1,0 +1,11 @@
+{
+    "name": "On",
+    "icon": {
+        "item": "minecraft:redstone_torch"
+    },
+    "powers": [
+        "kitsune:size_toggle"
+    ],
+    "impact": 2,
+    "description": " "
+}

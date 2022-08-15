@@ -1,4 +1,9 @@
 {
+    "gui_title": {
+        "choose_origin": "Select your first tail's ability",
+        "view_origin": "Your first tail"
+    },
+    "loading_priority": 1,
     "origins": [
         {
             "condition": {

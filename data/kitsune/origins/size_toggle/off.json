@@ -1,0 +1,10 @@
+{
+    "name": "Off",
+    "icon": {
+        "item": "minecraft:lever"
+    },
+    "powers": [
+        "kitsune:size_toggle"
+    ],
+    "description": " "
+}

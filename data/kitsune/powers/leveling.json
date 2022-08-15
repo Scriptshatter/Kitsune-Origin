@@ -1,0 +1,260 @@
+{
+    "type": "origins:multiple",
+    "exp_from_rock":{
+        "type": "origins:action_on_block_break",
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "kitsune:exp_tail_one",
+                        "change": 1
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 2
+                    },
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "kitsune:exp_tail_two",
+                        "change": 1
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 3
+                    },
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "kitsune:exp_tail_three",
+                        "change": 1
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 4
+                    },
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "kitsune:exp_tail_four",
+                        "change": 1
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 5
+                    },
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "kitsune:exp_tail_five",
+                        "change": 1
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 6
+                    },
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "kitsune:exp_tail_six",
+                        "change": 1
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 7
+                    },
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "kitsune:exp_tail_seven",
+                        "change": 1
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 8
+                    },
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "kitsune:exp_tail_eight",
+                        "change": 1
+                    }
+                }
+            ]
+        }
+    },
+    "save_health":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "block": false,
+            "type": "origins:raycast",
+            "distance": 500,
+            "bientity_condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:target_condition",
+                        "condition": {
+                            "type": "origins:living"
+                        }
+                    }
+                ]
+            },
+            "bientity_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:actor_action",
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "execute store result score @s enemy_health run attribute @e[limit=1,tag=kitsune_origin_target,distance=..60,sort=nearest] generic.max_health get"
+                        }
+                    },
+                    {
+                        "type": "origins:target_action",
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "function kitsune:target_entity"
+                        }
+                    }
+                ]
+            }
+        },
+        "interval": 1
+    },
+    "exp_on_kill":{
+        "type": "origins:self_action_on_kill",
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "resource operation @s kitsune:exp_tail_one += @s enemy_health"
+                    },
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 1
+                    }
+                },
+                {
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "resource operation @s kitsune:exp_tail_two += @s enemy_health"
+                    },
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 2
+                    }
+                },
+                {
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "resource operation @s kitsune:exp_tail_three += @s enemy_health"
+                    },
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 3
+                    }
+                },
+                {
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "resource operation @s kitsune:exp_tail_four += @s enemy_health"
+                    },
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 4
+                    }
+                },
+                {
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "resource operation @s kitsune:exp_tail_five += @s enemy_health"
+                    },
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 5
+                    }
+                },
+                {
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "resource operation @s kitsune:exp_tail_six += @s enemy_health"
+                    },
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 6
+                    }
+                },
+                {
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "resource operation @s kitsune:exp_tail_seven += @s enemy_health"
+                    },
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 7
+                    }
+                },
+                {
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "resource operation @s kitsune:exp_tail_eight += @s enemy_health"
+                    },
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 8
+                    }
+                }
+            ]
+        },
+        "cooldown": 100
+    },
+    "hidden": true
+}

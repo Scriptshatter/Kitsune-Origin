@@ -1,0 +1,399 @@
+{
+    "gui_title": {
+        "choose_origin": "Select your second tail's ability",
+        "view_origin": "Your second tail"
+    },
+    "loading_priority": 2,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:and",
+                "conditions":[
+                    {
+                        "type":"origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_one",
+                                "comparison": "==",
+                                "compare_to": 1
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_two",
+                                "comparison": "==",
+                                "compare_to": 1
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_three",
+                                "comparison": "==",
+                                "compare_to": 1
+                            }
+                        ]
+                    },
+                    {
+                        "type": "origins:resource",
+                        "compare_to": 2,
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails"
+                    }
+                ]
+            },
+            "origins": [
+                "kitsune:tail_two/skill_one"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:and",
+                "conditions":[
+                    {
+                        "type":"origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_one",
+                                "comparison": "==",
+                                "compare_to": 2
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_two",
+                                "comparison": "==",
+                                "compare_to": 2
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_three",
+                                "comparison": "==",
+                                "compare_to": 2
+                            }
+                        ]
+                    },
+                    {
+                        "type": "origins:resource",
+                        "compare_to": 2,
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails"
+                    }
+                ]
+            },
+            "origins": [
+                "kitsune:tail_two/skill_two"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:and",
+                "conditions":[
+                    {
+                        "type":"origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_one",
+                                "comparison": "==",
+                                "compare_to": 3
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_two",
+                                "comparison": "==",
+                                "compare_to": 3
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_three",
+                                "comparison": "==",
+                                "compare_to": 3
+                            }
+                        ]
+                    },
+                    {
+                        "type": "origins:resource",
+                        "compare_to": 2,
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails"
+                    }
+                ]
+            },
+            "origins": [
+                "kitsune:tail_two/skill_three"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:and",
+                "conditions":[
+                    {
+                        "type":"origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_one",
+                                "comparison": "==",
+                                "compare_to": 4
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_two",
+                                "comparison": "==",
+                                "compare_to": 4
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_three",
+                                "comparison": "==",
+                                "compare_to": 4
+                            }
+                        ]
+                    },
+                    {
+                        "type": "origins:resource",
+                        "compare_to": 2,
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails"
+                    }
+                ]
+            },
+            "origins": [
+                "kitsune:tail_two/skill_four"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:and",
+                "conditions":[
+                    {
+                        "type":"origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_one",
+                                "comparison": "==",
+                                "compare_to": 5
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_two",
+                                "comparison": "==",
+                                "compare_to": 5
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_three",
+                                "comparison": "==",
+                                "compare_to": 5
+                            }
+                        ]
+                    },
+                    {
+                        "type": "origins:resource",
+                        "compare_to": 2,
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails"
+                    }
+                ]
+            },
+            "origins": [
+                "kitsune:tail_two/skill_five"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:and",
+                "conditions":[
+                    {
+                        "type":"origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_one",
+                                "comparison": "==",
+                                "compare_to": 6
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_two",
+                                "comparison": "==",
+                                "compare_to": 6
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_three",
+                                "comparison": "==",
+                                "compare_to": 6
+                            }
+                        ]
+                    },
+                    {
+                        "type": "origins:resource",
+                        "compare_to": 2,
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails"
+                    }
+                ]
+            },
+            "origins": [
+                "kitsune:tail_two/skill_six"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:and",
+                "conditions":[
+                    {
+                        "type":"origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_one",
+                                "comparison": "==",
+                                "compare_to": 7
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_two",
+                                "comparison": "==",
+                                "compare_to": 7
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_three",
+                                "comparison": "==",
+                                "compare_to": 7
+                            }
+                        ]
+                    },
+                    {
+                        "type": "origins:resource",
+                        "compare_to": 2,
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails"
+                    }
+                ]
+            },
+            "origins": [
+                "kitsune:tail_two/skill_seven"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:and",
+                "conditions":[
+                    {
+                        "type":"origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_one",
+                                "comparison": "==",
+                                "compare_to": 8
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_two",
+                                "comparison": "==",
+                                "compare_to": 8
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_three",
+                                "comparison": "==",
+                                "compare_to": 8
+                            }
+                        ]
+                    },
+                    {
+                        "type": "origins:resource",
+                        "compare_to": 2,
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails"
+                    }
+                ]
+            },
+            "origins": [
+                "kitsune:tail_two/skill_eight"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:and",
+                "conditions":[
+                    {
+                        "type":"origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_one",
+                                "comparison": "==",
+                                "compare_to": 9
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_two",
+                                "comparison": "==",
+                                "compare_to": 9
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_three",
+                                "comparison": "==",
+                                "compare_to": 9
+                            }
+                        ]
+                    },
+                    {
+                        "type": "origins:resource",
+                        "compare_to": 2,
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails"
+                    }
+                ]
+            },
+            "origins": [
+                "kitsune:tail_two/skill_nine"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:and",
+                "conditions":[
+                    {
+                        "type":"origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_one",
+                                "comparison": "==",
+                                "compare_to": 10
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_two",
+                                "comparison": "==",
+                                "compare_to": 10
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "kitsune:tail_tracker_skill_roll_three",
+                                "comparison": "==",
+                                "compare_to": 10
+                            }
+                        ]
+                    },
+                    {
+                        "type": "origins:resource",
+                        "compare_to": 2,
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails"
+                    }
+                ]
+            },
+            "origins": [
+                "kitsune:tail_two/skill_ten"
+            ]
+        }
+    ]
+}

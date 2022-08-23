@@ -1,0 +1,11 @@
+origin set @s kitsune:tail_one origins:empty
+origin set @s kitsune:tail_two origins:empty
+origin set @s kitsune:tail_three origins:empty
+origin set @s kitsune:tail_four origins:empty
+origin set @s kitsune:tail_five origins:empty
+origin set @s kitsune:tail_six origins:empty
+origin set @s kitsune:tail_seven origins:empty
+origin set @s kitsune:tail_eight origins:empty
+origin set @s kitsune:tail_nine origins:empty
+origin set @s kitsune:size_toggle origins:empty
+origin set @s kitsune:stat_changes origins:empty

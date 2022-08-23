@@ -1,0 +1,25 @@
+{
+    "type": "origins:multiple",
+    "health": {
+        "type": "origins:attribute",
+        "modifiers": [
+            {
+                "attribute": "minecraft:genaric.max_health",
+                "operation": "multiply_total",
+                "value": 0
+            },
+            {
+                "attribute": "minecraft:genaric.movement_speed",
+                "operation": "addition",
+                "value": 0.3
+            }
+        ]
+    },
+    "jumping": {
+        "type":"origins:modify_jump",
+        "modifier": {
+            "operation": "addition",
+            "value": 1
+        }
+    }
+}

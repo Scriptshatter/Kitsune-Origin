@@ -37,13 +37,17 @@
                 {
                     "type":"origins:execute_command",
                     "command": "function kitsune:size_update"
+                },
+                {
+                    "type":"origins:execute_command",
+                    "command": "origin set @s kitsune:stat_changes kitsune:stat_changes/tail_two"
                 }
             ]
         }
     },
     "tail_two": {
         "type": "origins:resource",
-        "max": 750,
+        "max": 1000,
         "min": 0,
         "hud_render": {
             "should_render": true,
@@ -78,13 +82,17 @@
                 {
                     "type":"origins:execute_command",
                     "command": "function kitsune:size_update"
+                },
+                {
+                    "type":"origins:execute_command",
+                    "command": "origin set @s kitsune:stat_changes kitsune:stat_changes/tail_three"
                 }
             ]
         }
     },
     "tail_three": {
         "type": "origins:resource",
-        "max": 1250,
+        "max": 2000,
         "min": 0,
         "hud_render": {
             "should_render": true,
@@ -119,13 +127,17 @@
                 {
                     "type":"origins:execute_command",
                     "command": "function kitsune:size_update"
+                },
+                {
+                    "type":"origins:execute_command",
+                    "command": "origin set @s kitsune:stat_changes kitsune:stat_changes/tail_four"
                 }
             ]
         }
     },
     "tail_four": {
         "type": "origins:resource",
-        "max": 2000,
+        "max": 3500,
         "min": 0,
         "hud_render": {
             "should_render": true,
@@ -160,13 +172,17 @@
                 {
                     "type":"origins:execute_command",
                     "command": "function kitsune:size_update"
+                },
+                {
+                    "type":"origins:execute_command",
+                    "command": "origin set @s kitsune:stat_changes kitsune:stat_changes/tail_five"
                 }
             ]
         }
     },
     "tail_five": {
         "type": "origins:resource",
-        "max": 3000,
+        "max": 5000,
         "min": 0,
         "hud_render": {
             "should_render": true,
@@ -201,13 +217,17 @@
                 {
                     "type":"origins:execute_command",
                     "command": "function kitsune:size_update"
+                },
+                {
+                    "type":"origins:execute_command",
+                    "command": "origin set @s kitsune:stat_changes kitsune:stat_changes/tail_six"
                 }
             ]
         }
     },
     "tail_six": {
         "type": "origins:resource",
-        "max": 4250,
+        "max": 7500,
         "min": 0,
         "hud_render": {
             "should_render": true,
@@ -242,13 +262,17 @@
                 {
                     "type":"origins:execute_command",
                     "command": "function kitsune:size_update"
+                },
+                {
+                    "type":"origins:execute_command",
+                    "command": "origin set @s kitsune:stat_changes kitsune:stat_changes/tail_seven"
                 }
             ]
         }
     },
     "tail_seven": {
         "type": "origins:resource",
-        "max": 5750,
+        "max": 10500,
         "min": 0,
         "hud_render": {
             "should_render": true,
@@ -283,13 +307,17 @@
                 {
                     "type":"origins:execute_command",
                     "command": "function kitsune:size_update"
+                },
+                {
+                    "type":"origins:execute_command",
+                    "command": "origin set @s kitsune:stat_changes kitsune:stat_changes/tail_eight"
                 }
             ]
         }
     },
     "tail_eight": {
         "type": "origins:resource",
-        "max": 7000,
+        "max": 14000,
         "min": 0,
         "hud_render": {
             "should_render": true,
@@ -324,6 +352,10 @@
                 {
                     "type":"origins:execute_command",
                     "command": "function kitsune:size_update"
+                },
+                {
+                    "type":"origins:execute_command",
+                    "command": "origin set @s kitsune:stat_changes kitsune:stat_changes/tail_nine"
                 }
             ]
         }

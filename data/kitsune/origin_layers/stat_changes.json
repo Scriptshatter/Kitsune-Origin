@@ -1,4 +1,25 @@
 {
-    "hidden": true,
-    "origins": []
+    "gui_title": {
+        "choose_origin": "Ultrakill moment",
+        "view_origin": "What tail you're on"
+    },
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:constant",
+                "value": false
+            },
+            "origins": [
+                "kitsune:stat_changes/tail_one",
+                "kitsune:stat_changes/tail_two",
+                "kitsune:stat_changes/tail_three",
+                "kitsune:stat_changes/tail_four",
+                "kitsune:stat_changes/tail_five",
+                "kitsune:stat_changes/tail_six",
+                "kitsune:stat_changes/tail_seven",
+                "kitsune:stat_changes/tail_eight",
+                "kitsune:stat_changes/tail_nine"
+            ]
+        }
+    ]
 }

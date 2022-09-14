@@ -1,0 +1,13 @@
+{
+    "powers": [
+        "kitsune:stat_changes/tail_three"
+    ],
+    "icon": {
+        "item": "fire_charge",
+        "amount": 3
+    },
+    "order": 3,
+    "impact": 3,
+    "name": "Placeholder",
+    "description": "Tail 3"
+}

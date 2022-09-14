@@ -1,10 +1,13 @@
 {
     "powers": [
-
+        "kitsune:stat_changes/tail_one"
     ],
-    "icon": "minecraft:blaze_powder",
+    "icon": {
+        "item": "fire_charge",
+        "amount": 1
+    },
     "order": 3,
     "impact": 3,
-    "name": "Shitface Poopahstinka",
-    "description": "placeholder"
+    "name": "Placeholder",
+    "description": "Your first tail, and with it your first ability. "
 }

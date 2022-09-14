@@ -1,0 +1,13 @@
+{
+    "powers": [
+        "kitsune:stat_changes/tail_four"
+    ],
+    "icon": {
+        "item": "fire_charge",
+        "amount": 4
+    },
+    "order": 3,
+    "impact": 3,
+    "name": "Placeholder",
+    "description": "Tail 4"
+}

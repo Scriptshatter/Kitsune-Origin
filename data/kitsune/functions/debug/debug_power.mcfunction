@@ -1,0 +1,2 @@
+power grant Scriptshatter kitsune:tail_zero/detect_walking
+power grant Scriptshatter kitsune:tail_zero/need_move

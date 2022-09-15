@@ -256,5 +256,117 @@
         },
         "cooldown": 100
     },
+    "lose_exp":{
+        "type": "origins:action_on_callback",
+        "entity_action_respawned": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "kitsune:exp_tail_one",
+                        "change": -25
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 2
+                    },
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "kitsune:exp_tail_two",
+                        "change": -50
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 3
+                    },
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "kitsune:exp_tail_three",
+                        "change": -100
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 4
+                    },
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "kitsune:exp_tail_four",
+                        "change": -175
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 5
+                    },
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "kitsune:exp_tail_five",
+                        "change": -250
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 6
+                    },
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "kitsune:exp_tail_six",
+                        "change": -375
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 7
+                    },
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "kitsune:exp_tail_seven",
+                        "change": -525
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "comparison": "==",
+                        "resource": "kitsune:tail_tracker_tails",
+                        "compare_to": 8
+                    },
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "kitsune:exp_tail_eight",
+                        "change": -700
+                    }
+                }
+            ]
+        }
+    },
     "hidden": true
 }

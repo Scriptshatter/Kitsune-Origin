@@ -1,0 +1,62 @@
+{
+    "type": "origins:multiple",
+    "cooldown": {
+        "type": "origins:cooldown",
+        "cooldown": 3,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "w": {
+        "type": "origins:active_self",
+        "entity_action":{
+            "type": "origins:change_resource",
+            "resource": "kitsune:tail_zero/detect_walking_cooldown",
+            "change": 1,
+            "operation": "set"
+        },
+        "key": {
+            "key": "key.forward",
+            "continuous": true
+        }
+    },
+    "s": {
+        "type": "origins:active_self",
+        "entity_action":{
+            "type": "origins:change_resource",
+            "resource": "kitsune:tail_zero/detect_walking_cooldown",
+            "change": 1,
+            "operation": "set"
+        },
+        "key": {
+            "key": "key.back",
+            "continuous": true
+        }
+    },
+    "d": {
+        "type": "origins:active_self",
+        "entity_action":{
+            "type": "origins:change_resource",
+            "resource": "kitsune:tail_zero/detect_walking_cooldown",
+            "change": 1,
+            "operation": "set"
+        },
+        "key": {
+            "key": "key.right",
+            "continuous": true
+        }
+    },
+    "a": {
+        "type": "origins:active_self",
+        "entity_action":{
+            "type": "origins:change_resource",
+            "resource": "kitsune:tail_zero/detect_walking_cooldown",
+            "change": 1,
+            "operation": "set"
+        },
+        "key": {
+            "key": "key.left",
+            "continuous": true
+        }
+    }
+}

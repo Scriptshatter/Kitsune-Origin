@@ -1,0 +1,71 @@
+{
+    "type": "origins:multiple",
+    "timer": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1200,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 1,
+            "condition": {
+                "type": "origins:constant",
+                "value": true
+            }
+        }
+    },
+    "walking": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "kitsune:cut_content/need_move_timer",
+            "change": 10,
+            "operation": "add"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "kitsune:tail_zero/detect_walking_cooldown",
+            "comparison": "!=",
+            "compare_to": 0
+        },
+        "interval": 10
+    },
+    "sprinting": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "kitsune:cut_content/need_move_timer",
+            "change": 10,
+            "operation": "add"
+        },
+        "condition": {
+            "type": "origins:sprinting"
+        },
+        "interval": 10
+    },
+    "cooldown_func":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "kitsune:cut_content/need_move_timer",
+            "change": -10,
+            "operation": "add"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions":[
+                {
+                    "type": "origins:resource",
+                    "resource": "kitsune:tail_zero/detect_walking_cooldown",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:sprinting",
+                    "inverted": true
+                }
+            ]
+        },
+        "interval": 10
+    }
+}
